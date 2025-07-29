@@ -1,0 +1,10 @@
+<div>
+  <h2>Upload Your Artwork</h2>
+  <input type="file" (change)="onFileSelected($event)" />
+  <button (click)="uploadArtwork()">Upload</button>
+
+  <div *ngIf="feedback">
+    <h3>AI Feedback</h3>
+    <p>{{ feedback }}</p>
+  </div>
+}
